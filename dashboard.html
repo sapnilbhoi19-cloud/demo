@@ -1,0 +1,123 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrbiSphere - Internal Social Network</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+ <!-- Main App Container -->
+    <div id="app-container" class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-left">
+                <button id="sidebar-toggle" class="btn btn--secondary sidebar-toggle">☰</button>
+                <div class="logo-header">
+                    <span class="logo-icon">🌐</span>
+                    <span class="logo-text">OrbiSphere</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="notifications">
+                    <button class="notification-btn">
+                        🔔
+                        <span class="notification-badge">2</span>
+                    </button>
+                </div>
+                <div class="user-profile-dropdown">
+                    <button class="profile-btn">
+                        <span class="user-avatar">👨&zwj;💼</span>
+                        <span class="user-name">Nirav Mistry</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+		
+		<!-- Sidebar -->
+        <aside id="sidebar" class="sidebar">
+            <nav class="sidebar-nav">
+                <ul class="nav-menu">
+                    <li><a href="dashboard.html" class="nav-link active" data-module="dashboard">📊 Dashboard</a></li>
+                    <li><a href="communication.html" class="nav-link" data-module="communication">💬 Communication</a></li>
+                    <li><a href="events.html" class="nav-link" data-module="events">📅 Events</a></li>
+                    <li><a href="documents.html" class="nav-link" data-module="documents">📁 Documents</a></li>
+                    <li><a href="feedback.html" class="nav-link" data-module="feedback">📝 Feedback</a></li>
+                    <li><a href="admin.html" class="nav-link" data-module="admin">⚙️ Admin Panel</a></li>
+                    <li><a href="profile.html" class="nav-link" data-module="profile">👤 Profile</a></li>
+                </ul>
+            </nav>
+        </aside>
+		
+		        <!-- Main Content -->
+        <main class="main-content">
+			
+			 <!-- Dashboard Module -->
+            <div id="dashboard" class="module active">
+                <div class="module-header">
+                    <h2>Welcome back, Nirav!</h2>
+                    <p class="module-subtitle">Here's what's happening in your organization</p>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card card">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-content">
+                            <h3>38</h3>
+                            <p>Active Users</p>
+                        </div>
+                    </div>
+                    <div class="stat-card card">
+                        <div class="stat-icon">💬</div>
+                        <div class="stat-content">
+                            <h3>247</h3>
+                            <p>Messages This Week</p>
+                        </div>
+                    </div>
+                    <div class="stat-card card">
+                        <div class="stat-icon">📅</div>
+                        <div class="stat-content">
+                            <h3>12</h3>
+                            <p>Events This Month</p>
+                        </div>
+                    </div>
+                    <div class="stat-card card">
+                        <div class="stat-icon">📊</div>
+                        <div class="stat-content">
+                            <h3>87%</h3>
+                            <p>Team Engagement</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-content">
+                    <div class="announcements-section">
+                        <div class="card">
+                            <div class="card__header">
+                                <h3>Recent Announcements</h3>
+                            </div>
+                            <div class="card__body">
+                                <div id="announcements-list"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="events-preview">
+                        <div class="card">
+                            <div class="card__header">
+                                <h3>Upcoming Events</h3>
+                            </div>
+                            <div class="card__body">
+                                <div id="events-preview-list"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		
+		
+	</div>
+    <script src="app.js"></script>
+
+</body></html>
