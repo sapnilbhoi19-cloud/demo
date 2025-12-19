@@ -143,7 +143,7 @@
   --container-lg: 1024px;
   --container-xl: 1280px;
 }
-	
+
 /* Dark mode colors */
 @media (prefers-color-scheme: dark) {
   :root {
@@ -1622,26 +1622,4 @@ select.form-control {
 .module.active {
   opacity: 1;
   transform: translateY(0);
-}
-
-.change {
-  display: flex !important;
-  align-items: center !important;
-  gap: var(--space-12) !important;
-  padding: var(--space-12) var(--space-16) !important;
-  border-radius: var(--radius-base) !important;
-  color: var(--color-text-secondary) !important;
-  text-decoration: none !important;
-  font-weight: var(--font-weight-medium) !important;
-  transition: all var(--duration-fast) !important;
-}
-
-.change:hover {
-  background-color: var(--color-secondary) !important;
-  color: var(--color-text) !important;
-}
-
-.change.active {
-  background-color: var(--color-primary) !important;
-  color: var(--color-btn-primary-text) !important;
 }
